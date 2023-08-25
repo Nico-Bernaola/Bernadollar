@@ -37,7 +37,7 @@ async function fetchBlueDollarPrice() {
       const blueDollarPriceElement = document.getElementById("blueDollar");
       blueDollarPriceElement.textContent = blueDollarValueSell;
 
-      const dollarAvgInt = parseInt(blueDollarValueAvg); //Pasa el valor promedio a entero
+      const dollarAvgInt = parseInt(blueDollarValueAvg); //Pasa el valor promedio a número entero
       const blueDollarPriceAvg = document.getElementById("blueDollarAvg");
       blueDollarPriceAvg.textContent = dollarAvgInt;
 
