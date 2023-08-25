@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    <title>Dolar Blue</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Dolar Nic<i id="nico-copyright">provided by Nico Bernaola</i></div>
+        <nav class="nav">
+            <li class="nav-item">Home</li>
+            <li class="nav-item"><a href="https://bluelytics.com.ar/" class="alink">Sources</a></li>
+            <li class="nav-item">Services</li>
+            <li class="nav-item">Contact</li>
+        </nav>
+    </header>
+
+    <div class="main">
+        <!-- Sección del conversor de peso a dólar-->
+        <div class="conversor">
+            <label id="label-text">Convertir Pesos (ARS) a Dólares americanos (USD)</label>
+            <input type="number" id="conversion">
+            <p id="resultado"></p>
+        </div>
+        <!-- Sección para la cotización de monedas-->
+        <div class="cotizaciones">
+            <div class="container venta">
+                <p id="elDolar">DOLAR BLUE</p>
+                <h2 id="blueDollar" class="spinner"><div></div></h2>
+            </div>
+
+            <div class="container promedio">
+                <p id="elDolar">DOLAR PROMEDIO</p>
+                <h2 id="blueDollarAvg" class="spinner"><div></div></h2>
+            </div>
+
+            <div class="container euro">
+                <p id="elEuro">EURO BLUE</p>
+                <h2 id="euroVenta" class="spinner"><div></div></h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

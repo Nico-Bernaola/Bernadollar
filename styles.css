@@ -1,0 +1,165 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+
+  #nico-copyright{
+    font-size: 8px;
+    margin-left: 10px;
+    user-select: none;
+  }
+
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-item {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-style: italic;
+  }
+  
+  .nav-item:hover {
+    color: #1a202c; /* Dark color for hover effect */
+  }
+
+  .alink {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .alink:hover{
+    color: #1a202c; /* Dark color for hover effect */
+  }
+
+/* Center the content */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+/* Styling for the conversor section */
+.conversor {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 1.5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+#label-text {
+    font-size: 1rem;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#conversion {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+#resultado {
+    font-size: 1.25rem;
+    color: #2b6cb0;
+}
+
+/* Styling for the cotizaciones section */
+.cotizaciones {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Spinner Styles */
+.spinner {
+    display: inline-block;
+    transform: translateZ(1px);
+  }
+  
+  .spinner > div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2b6cb0;
+    animation: spinner-animation 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  
+  @keyframes spinner-animation {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }
+
+.container {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+}
+
+#elDolar, #elEuro {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+#blueDollar, #blueDollarAvg, #euroVenta {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2b6cb0;
+}
