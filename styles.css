@@ -27,13 +27,6 @@ body {
     user-select: none;
   }
 
-  /*Small copyright*/
-  #nico-copyright{
-    font-size: 8px;
-    margin-left: 10px;
-    user-select: none;
-  }
-
   .nav {
     list-style: none;
     display: flex;
@@ -46,7 +39,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     transition: color 0.2s;
-    font-style: italic;
+    
   }
   
   .nav-item:hover {
@@ -60,6 +53,7 @@ body {
   
   .alink:hover{
     color: #1a202c; /* Dark color for hover effect */
+    font-style: italic;
   }
 
 /* Center the content */
@@ -169,4 +163,25 @@ body {
     color: #2b6cb0;
 }
 
-/*Testing push/merge problems*/
+/* Footer */
+.footer {
+    background-color: #0a224e;
+    color: white;
+    padding: 1rem;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+   /*Small copyright*/
+   #nico-copyright{
+    font-size: 10px;
+    user-select: none;
+  }
+
+  #copyright-date{
+    font-size: 10px;
+    user-select: none;
+    margin-left: 3px;
+  }
