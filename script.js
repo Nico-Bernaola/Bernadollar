@@ -81,3 +81,5 @@ async function fetchBlueDollarPrice() {
 logData();
 makeConversion();
 setInterval(fetchBlueDollarPrice, 60000); // Actualiza la llamada a la función cada 10 minutos
+
+//Testing merge/push problems
