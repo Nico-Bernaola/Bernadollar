@@ -2,12 +2,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
 /* Header Styles */
 .header {
     background-color: #2b6cb0;
     color: white;
     padding: 1rem;
-    padding-bottom: 3em;
+    height: 4em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,8 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f3f4f6;
+    height: 100%;
 }
 
 /* Styling for the conversor section */
@@ -119,8 +123,8 @@
   
   .spinner > div {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: #2b6cb0;
     animation: spinner-animation 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
